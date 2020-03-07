@@ -27,7 +27,7 @@ class User {
         throw new Error("Invalid username or password!");
       } else {
         const token = await generateToken(userData);
-        res.status(201).json({ token });
+        res.status(200).json({ token });
       }
     } catch (error) {
       res.status(500).json(error.message || error);

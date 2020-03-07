@@ -9,17 +9,42 @@
         <div class="form">
           <div v-if="userLogin">
             <p class="font-weight-light">Yay, here is your token</p>
-            <hr class="bg-dark" />
+            <hr class="bg-danger" />
             <p class="text-break">
               {{ userLogin }}
+            </p>
+            <hr class="bg-danger" />
+            <p class="font-weight-light">
+              How does it work?
+              <span>
+                See
+                <a
+                  href="https://github.com/harfialpharaby/sekolahmu/tree/master/server"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  docs
+                </a>
+              </span>
+              <span class="text-muted">OR</span>
+              <span>
+                try on
+                <a
+                  href="https://documenter.getpostman.com/view/3871398/SzRxV9oR?version=latest"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Postman
+                </a></span
+              >
+            </p>
+            <p class="text-muted font-italic mt-3" style="font-size:12px">
+              This is the end of the challenges, thank you for giving me this
+              opportunity and hope you enjoy.
             </p>
             <b-button squared variant="danger" class="ml-2" @click="logout()">
               Logout
             </b-button>
-            <p class="text-muted font-italic mt-5">
-              This is the end of the challenges, thank you for giving me this
-              opportunity and hope you enjoy.
-            </p>
           </div>
           <b-form @submit="onSubmit" class="text-left" v-else>
             <b-form-group
