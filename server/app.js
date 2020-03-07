@@ -7,6 +7,8 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const cors = require("cors");
+const redis = require("redis");
+const client = redis.createClient();
 
 const indexRouter = require("./routes/index");
 const appendixRouter = require("./routes/appendix");
@@ -14,6 +16,9 @@ const usersRouter = require("./routes/users");
 
 const app = express();
 
+client.on("error", function(err) {
+  console.log("Error " + err);
+});
 app.use(cors());
 app.use(logger("dev"));
 app.use(express.json());

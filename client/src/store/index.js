@@ -7,26 +7,52 @@ const BASE_URL = "http://localhost:3000";
 
 export default new Vuex.Store({
   state: {
-    appendix: null
+    appendix: null,
+    token: localStorage.token || null
   },
   mutations: {
     SET_APPENDIX(state, payload) {
       state.appendix = payload;
+    },
+    SET_TOKEN(state, token) {
+      state.token = token;
     }
   },
   actions: {
     async fetchAppendix(context) {
       try {
         const response = await fetch(`${BASE_URL}/appendix`, {
-          method: "GET", // *GET, POST, PUT, DELETE, etc.
-          mode: "cors", // no-cors, *cors, same-origin
+          method: "GET",
+          mode: "cors",
           headers: {
             "Content-Type": "application/json"
           }
         });
         const data = await response.json();
         context.commit("SET_APPENDIX", data);
-        console.log(data);
+      } catch (error) {
+        console.log(error);
+      }
+    },
+    async LoginRegister(context, payload) {
+      console.log(payload);
+
+      try {
+        const response = await fetch(`${BASE_URL}/users/${payload.action}`, {
+          method: "POST",
+          mode: "cors",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(payload.form)
+        });
+        const resJson = await response.json();
+        if (typeof resJson === "string") {
+          alert(resJson);
+        } else {
+          localStorage.setItem("token", resJson.token);
+          context.commit("SET_TOKEN", resJson.token);
+        }
       } catch (error) {
         console.log(error);
       }

@@ -7,7 +7,7 @@ class Appendix {
           category_name: "UJIANMU",
           name: "JAGO BIOLOGI 12",
           avatar:
-            "https://www.sekolah.mu/wp-content/uploads/2019/11/Biologi-04-3.png",
+            "https://www.sekolah.mu/wp-content/uploads/2019/11/biologi-12.png",
           abstract:
             "Program ini akan membantumu menelusuri materi biologi kelas 12 dengan menantang sekaligus menyenangkan!",
           description:
@@ -21,7 +21,7 @@ class Appendix {
           category_name: "UJIANMU",
           name: "JAGO EKONOMI 11",
           avatar:
-            "https://www.sekolah.mu/wp-content/uploads/2019/11/Ekonomi-06-1.png",
+            "https://www.sekolah.mu/wp-content/uploads/2019/11/ekonomi-11.png",
           abstract:
             "Kuasai materi Ekonomi kelas 11 dan jadilah yang terbaik di kelasmu! Dengan mengikuti program ini, kamu akan belajar Ekonomi dengan cara yang seru dan menantang melalui video materi, infografis, dan latihan soal serta pembahasannya.",
           description:
@@ -35,7 +35,7 @@ class Appendix {
           category_name: "UJIANMU",
           name: "JAGO FISIKA 10",
           avatar:
-            "https://www.sekolah.mu/wp-content/uploads/2019/11/Fisika-02-3.png",
+            "https://www.sekolah.mu/wp-content/uploads/2019/11/fisika-10-1.png",
           abstract:
             "Telusuri materi Fisika Kelas 10 dengan menyenangkan dan menantang! Di program ini, kamu akan belajar dengan melihat video, rumus, dan latihan soal. Kalau saat belajar ada yang kamu tidak pahami, kamu bisa langsung tanya guru di Tanyamu (hanya di aplikasi).",
           description:
@@ -78,7 +78,7 @@ class Appendix {
           category_name: "KELASMU",
           name: "Desain Cita-cita",
           avatar:
-            "https://www.sekolah.mu/wp-content/uploads/2019/12/Design-Cita-cita.png",
+            "https://www.sekolah.mu/wp-content/uploads/2019/11/Web-Cover-Template-24.jpg",
           abstract:
             "Kamu mungkin pernah mengalami kebingungan atau takut salah mengambil langkah dalam menentukan masa depan. Tenang, program ini akan membantu mu untuk mendesain cita-cita dan masa depan. Kamu akan diajarkan bagaimana caranya menjadi pemecah masalah yang baik, didampingi menyusun rencana masa depan, dan dilatih kreativitasnya untuk menggapai cita-cita. Kamu akan diajarkan langsung oleh Kepala Sekolah _School of Human_, sekolah alternatif yang memang mengembangkan peserta didiknya berdasarkan kecerdasan majemuk yang dimiliki, bakat dan minat.",
           description:
@@ -92,7 +92,7 @@ class Appendix {
           category_name: "KARIERMU",
           name: "Barista Muda – Gordi (Blended)",
           avatar:
-            "https://www.sekolah.mu/wp-content/uploads/2019/12/Icon-24.png",
+            "https://www.sekolah.mu/wp-content/uploads/2019/11/BARISTA-MUDA-540x360.jpg",
           abstract:
             "Apakah kamu pencinta kopi? Di program ini, kamu bisa kerja menjadi barista di salah satu kafe terkeren se-Jakarta, Gordi HQ Jeruk Purut. Ayo ikut program ini untuk belajar cara membuat kopi yang mantap dan mengalami hidup sebagai barista muda.",
           description:
